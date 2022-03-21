@@ -40,7 +40,7 @@ const CategoryFiveGrid = ({ spaceBottomClass }) => {
                      </Link>
                     </li>
                     <li className="st-1">
-                     <Link>
+                     <Link to={process.env.PUBLIC_URL + "/gass"}> {string["electricity"]} 
                        <i className="pe-7s-safe circle-1" />
                        <p>Gass</p>
                      </Link>

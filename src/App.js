@@ -133,6 +133,7 @@ const NotFound = lazy(() => import("./pages/other/NotFound"));
 // agricoinpages
 const InternetBill = lazy(() => import("./components/agricoinpage/InternetBill.js"));
 const Electricity = lazy(() => import("./components/agricoinpage/Electricity.js"));
+const Gass = lazy(() => import("./components/agricoinpage/gass.js"));
 
 
 
@@ -335,6 +336,10 @@ const App = (props) => {
                  <Route
                   path={process.env.PUBLIC_URL + "/electricity"}
                   component={Electricity}
+                />
+                <Route
+                  path={process.env.PUBLIC_URL + "/gass"}
+                  component={Gass}
                 />
                
                 {/* Shop pages */}

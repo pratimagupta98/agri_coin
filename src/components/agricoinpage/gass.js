@@ -7,7 +7,7 @@ import { Container, Row,  Col, Input, InputGroup, Form } from "reactstrap";
 
 
 
-const Electricity = ({ data, spaceBottomClass }) => {
+const Gass = ({ data, spaceBottomClass }) => {
     
   return (
     <LayoutOne>
@@ -23,7 +23,7 @@ const Electricity = ({ data, spaceBottomClass }) => {
           }}
         >
           <div className="">
-            <h1 className="text-light text-center">Electricity Bills</h1>
+            <h1 className="text-light text-center">Gas & LPG Bills</h1>
           </div>
         </div>
       </Row>
@@ -33,7 +33,7 @@ const Electricity = ({ data, spaceBottomClass }) => {
         <Row>
             <Col md="6">
                 <Row>
-                  <h4 className="sr-h4">Pay For Electricity</h4>
+                  <h4 className="sr-h4">Pay For Gas & LPG</h4>
                   <div className="sr-1">
                     <Form>
                     <Col md="12">
@@ -97,9 +97,9 @@ const Electricity = ({ data, spaceBottomClass }) => {
 
 };
 
-Electricity.propTypes = {
+Gass.propTypes = {
   data: PropTypes.object,
   spaceBottomClass: PropTypes.string
 };
 
-export default Electricity;
+export default Gass;

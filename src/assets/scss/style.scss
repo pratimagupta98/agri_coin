@@ -1,0 +1,244 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~swiper/css/swiper.css";
+@import "~animate.css/animate.min.css";
+@import "~lightgallery.js/dist/css/lightgallery.css";
+@import "~react-modal-video/scss/modal-video.scss";
+@import "../css/icons.min.css";
+
+@import "variables";
+@import "helper";
+@import "common";
+@import "preloader";
+@import "header";
+@import "slider";
+@import "support";
+@import "section-title";
+@import "product";
+@import "blog";
+@import "footer";
+@import "banner";
+@import "suscribe";
+@import "about";
+@import "image-slider";
+@import "testimonial";
+@import "brand-logo";
+@import "timers";
+@import "breadcrumb";
+@import "sidebar";
+@import "shop";
+@import "product-details";
+@import "cart";
+@import "compare";
+@import "checkout";
+@import "contact";
+@import "blog-details";
+@import "login-register";
+@import "my-account";
+@import "404";
+@import "video-popup";
+
+
+// rohit css
+
+li.st-1 {
+    display: inline-block;
+    text-align: center;
+    margin: 0 20px;
+}
+.circle-1 {
+    font-size: 35px;
+    background-color: #fff;
+    width: 50px;
+    color: #34b56b;
+    height: 50px;
+    border-radius: 100px;
+    padding: 6px;
+    font-weight: 600;
+    margin-bottom: 10px;
+   
+}
+.circle-1:hover{
+    background-color: #000;
+    color: #fff;
+}
+.bx1 {
+    padding: 26px;
+}
+.bx1 p{
+    color: #fff;
+}
+section.st-p {
+    position: absolute;
+    z-index: 111111111;
+    left: 141px;
+    bottom: -250px;
+}
+.bx-2 {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 35px;
+}
+.bx1 {
+    padding: 50px 25px;
+    border-radius: 10px;
+    background-image: linear-gradient(green, yellow);
+}
+button.btn-s {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    background: #34b56b;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+}
+
+// section service
+section.srevicegrid {
+    margin-top: 300px;
+    width: 100%;
+    display: inline-block;
+    background-color: #F6F7F9;
+    padding: 70px 0px;
+}
+section.srevicegrid h1{
+    font-weight: 700;
+}
+section.srevicegrid p{
+   font-size: 18px;
+}
+.st-card.card {
+    background: #fff;
+    padding: 40px;
+    border: none;
+    margin-top: 20px;
+    box-shadow: 0 25px 70px rgba(176, 218, 166, 0.5);
+}   
+
+.st-card.card h3{
+    color: #34b56b;
+    font-weight: 700;
+}
+.st-card.card p{
+   font-size: 16px;
+}
+.card_icon{
+    font-size: 50px;
+    font-weight: bold;
+    color: #34b56b;
+}
+
+.st-card.card:hover{
+    background-color: #34b56b;
+    .card_icon{
+        color: #fff;
+    }
+    p{
+        color: #fff;
+    }
+    h3{
+        color: #fff;
+    }
+}
+.int-box {
+    width: 120px;
+    display: inline-block;
+    margin-bottom: 11px;
+}
+label.lb-m {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+}
+span.sr-2 {
+    padding: 9px;
+    font-size: 20px;
+    border: 1px solid#32b46c;
+    background-color: #32b46c;
+    color: #fff;
+}
+button.sr-btn {
+    color: #fff;
+    background: #32b46c;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+h4.sr-h {
+    text-align: center;
+    font-size: 25px;
+    background: #ccc3;
+    padding: 20px 0px;
+    color: #32b46c;
+    font-weight: 500;
+}
+.sr-3 {
+    border: 1px solid#cccccc38;
+}
+li.sr-li {
+    font-size: 18px;
+}
+ul.sr-ul {
+    padding: 50px 122px;
+    line-height: 30px;
+}
+span.sr-span {
+    float: right;
+}
+h4.sr-h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+button.sr-btn1 {
+    color: #fff;
+    background: #32b46c;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.sr-div {
+    width: 80%;
+    margin: 0 auto;
+}
+.sr-1 {
+    padding-right: 100px;
+}
+li.sr-li.dr {
+    font-weight: 700;
+    color: #32b46c;
+    margin-top: 15px;
+}
+
+
+
+// media query css 17/3/22
+
+@media only screen and (max-width: 600px) {
+
+    section.st-p {
+        position: unset;
+        z-index: 111111111;
+        left: 0px;
+        bottom: 0px;
+        margin-top: 30px;
+    }
+    li.st-1 {
+        display: inline-block;
+        text-align: center;
+        width: 50% !important;
+        margin: 0px;
+        padding-bottom: 15px;
+    }
+    section.srevicegrid {
+        margin-top: 30px;
+    }
+    .mb-st{
+        margin-top: 20px !important;
+    }
+
+}

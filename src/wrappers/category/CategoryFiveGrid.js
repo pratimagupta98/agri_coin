@@ -17,31 +17,25 @@ const CategoryFiveGrid = ({ spaceBottomClass }) => {
                 <li className="st-1">
                   <Link>
                     <i className="pe-7s-cash circle-1" />
-                    <p>Fast Recharg</p>
+                    <p>Fast Recharge</p>
                   </Link>
                 </li>
                 <li className="st-1">
-                  <Link>
-                    <i className="pe-7s-global circle-1" />
-                    <p>F. Internet Bill</p>
-                  </Link>
-                </li>
-                <li className="st-1">
-                  <Link>
+                  <Link to={process.env.PUBLIC_URL + "/internet"}>
+                  {string["internet"]}
                     <i className="pe-7s-global circle-1" />
                     <p>Internet Bill</p>
                   </Link>
                 </li>
                 <li className="st-1">
                   <Link>
-                    <i className="pe-7s-phone circle-1" />
+                    <i className="pe-7s-phone circle-1 active" />
                     <p>M. Balance</p>
                   </Link>
                 </li>
                 <li className="st-1">
                   <Link to={process.env.PUBLIC_URL + "/gass"}>
-                    {" "}
-                    {string["electricity"]}
+                    {string["gass"]}
                     <i className="pe-7s-safe circle-1" />
                     <p>Gass</p>
                   </Link>
@@ -54,6 +48,13 @@ const CategoryFiveGrid = ({ spaceBottomClass }) => {
                   </Link>
                 </li>
                 <li className="st-1">
+                  <Link  to={process.env.PUBLIC_URL + "/water"}>
+                    {string["water"]}
+                    <i className="pe-7s-wine circle-1" />
+                    <p>Water</p>
+                  </Link>
+                </li>
+                <li className="st-1">
                   <Link to={process.env.PUBLIC_URL + "/internetbill"}>
                     {string["internetbill"]}
                     <i className="pe-7s-airplay circle-1" />
@@ -61,7 +62,8 @@ const CategoryFiveGrid = ({ spaceBottomClass }) => {
                   </Link>
                 </li>
                 <li className="st-1">
-                  <Link>
+                  <Link to={process.env.PUBLIC_URL + "/shoppingbill"}>
+                    {string["shoppingbill"]}
                     <i className="pe-7s-shopbag circle-1" />
                     <p>Shopping Bill</p>
                   </Link>
@@ -100,10 +102,13 @@ const CategoryFiveGrid = ({ spaceBottomClass }) => {
                     ></Input>
                   </Col>
                   <Col md="3">
-                    <Input type="text" className="form-control mb-st"></Input>
+                    <Input type="text" className="form-control" placeholder="Select Operator">
+                      <option>Idea</option>
+                      <option>Jio</option>
+                    </Input>
                   </Col>
                   <Col md="3">
-                    <Input type="text" className="form-control mb-st"></Input>
+                    <Input type="text" className="form-control mb-st" placeholder="Amount"></Input>
                   </Col>
                   <Col md="3">
                     <button type="button" class="btn-s mb-st">

@@ -134,6 +134,17 @@ const NotFound = lazy(() => import("./pages/other/NotFound"));
 const InternetBill = lazy(() => import("./components/agricoinpage/InternetBill.js"));
 const Electricity = lazy(() => import("./components/agricoinpage/Electricity.js"));
 const Gass = lazy(() => import("./components/agricoinpage/gass.js"));
+const Internet = lazy(() => import("./components/agricoinpage/Internet.js"));
+const Water = lazy(() => import("./components/agricoinpage/Water.js"));
+const shoppingBill = lazy(() => import("./components/agricoinpage/shoppingBill.js"));
+const Wallet = lazy(() => import("./components/agricoinpage/wallet.js"));
+const TableHistory = lazy(() => import("./components/agricoinpage/TableHistory.js"));
+
+
+
+
+
+
 
 
 
@@ -334,12 +345,32 @@ const App = (props) => {
                   component={InternetBill}
                 />
                  <Route
+                  path={process.env.PUBLIC_URL + "/shoppingbill"}
+                  component={shoppingBill}
+                />
+                 <Route
                   path={process.env.PUBLIC_URL + "/electricity"}
                   component={Electricity}
+                />
+                  <Route
+                  path={process.env.PUBLIC_URL + "/internet"}
+                  component={Internet}
                 />
                 <Route
                   path={process.env.PUBLIC_URL + "/gass"}
                   component={Gass}
+                />
+                <Route
+                  path={process.env.PUBLIC_URL + "/water"}
+                  component={Water}
+                />
+                 <Route
+                  path={process.env.PUBLIC_URL + "/wallet"}
+                  component={Wallet}
+                />
+                  <Route
+                  path={process.env.PUBLIC_URL + "/tablehistory"}
+                  component={TableHistory}
                 />
                
                 {/* Shop pages */}

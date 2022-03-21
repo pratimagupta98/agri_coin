@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+import PropTypes, { string } from "prop-types";
 import React, { useState, useEffect } from "react";
 import { Link, useHistory, useParams } from "react-router-dom";
 import { connect } from "react-redux";
@@ -112,7 +112,8 @@ const IconGroup = ({
                   <Link to={process.env.PUBLIC_URL + "/myOrder"}>My Order</Link>
                 </li>
                 <li>
-                  <Link to={process.env.PUBLIC_URL + "/Wallet"}>Wallet</Link>
+                  <Link to={process.env.PUBLIC_URL + "/wallet"}>
+                    {string["wallet"]}Wallet</Link>
                 </li>
                 <li>
                   <Link to={process.env.PUBLIC_URL + "/KycVerification"}>Kyc Verification</Link>

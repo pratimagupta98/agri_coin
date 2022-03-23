@@ -310,7 +310,7 @@ const ProductImageDescriptionSticky = ({
                       });
                       if (localStorage.getItem("auth-token")) {
                         Axios.post(
-                          "http://35.154.86.59/api/admin/add_ToCart",
+                          "http://35.154.134.118/api/admin/add_ToCart",
                           {
                             product: state._id,
                             product_qty: quantityCount,
@@ -352,7 +352,7 @@ const ProductImageDescriptionSticky = ({
                     onClick={() => {
                       console.log("btn clicked");
                       Axios.post(
-                        "http://35.154.86.59/api/admin/addwishlist",
+                        "http://35.154.134.118/api/admin/addwishlist",
                         {
                           product: state._id,
                           color: selectedColor,

@@ -14,7 +14,7 @@ class ByCategory extends React.Component {
   };
   componentDidMount() {
     axios
-      .get(`http://35.154.86.59/api/admin/getproductCategory/`)
+      .get(`http://35.154.134.118/api/admin/getproductCategory/`)
       .then((res) => {
         console.log(res);
         this.setState({ ByCategoryList: res.data.data });
@@ -22,7 +22,7 @@ class ByCategory extends React.Component {
   }
   // const [users, setUsers] = useState([]);
   // const getUsers = async()=>{
-  // const res= await axios.get(`http://35.154.86.59/api/admin/productbycategory/618a05e27e718858ba3de153`).then((data)=>{
+  // const res= await axios.get(`http://35.154.134.118/api/admin/productbycategory/618a05e27e718858ba3de153`).then((data)=>{
   //   console.log(data)
   //   console.log(data.data.data)
   //   setUsers(data.data.data)

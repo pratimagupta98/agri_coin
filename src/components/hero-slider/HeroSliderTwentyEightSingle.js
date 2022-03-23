@@ -26,7 +26,7 @@ export class HeroSliderTwentyEightSingle extends Component {
     this.setState({ loading: true });
     console.log(this.state);
     axios
-      .post(`http://35.154.86.59/api/admin/searchinputproduct`, {
+      .post(`http://35.154.134.118/api/admin/searchinputproduct`, {
         oneinput: this.state.value,
       })
       .then((response) => {

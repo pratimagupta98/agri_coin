@@ -81,7 +81,7 @@ const ShopGridTwoColumn = ({
   const [dress, setDress] = useState([]);
 
   const allcolor = async () => {
-    const { data } = await Axios.get(`http://35.154.86.59/api/admin/getcolor`);
+    const { data } = await Axios.get(`http://35.154.134.118/api/admin/getcolor`);
     //const address = data.data;
     console.log(data.data);
     setAllcolors(data.data);
@@ -89,18 +89,18 @@ const ShopGridTwoColumn = ({
     // setUseraddress(address)
   };
   const allsize = async () => {
-    const { data } = await Axios.get(`http://35.154.86.59/api/admin/getsize`);
+    const { data } = await Axios.get(`http://35.154.134.118/api/admin/getsize`);
     console.log(data.data);
     setAllsizes(data.data);
   };
   const getallbrand = async () => {
-    const { data } = await Axios.get(`http://35.154.86.59/api/admin/allbrand`);
+    const { data } = await Axios.get(`http://35.154.134.118/api/admin/allbrand`);
     console.log(data.data);
     setAllbrand(data.data);
   };
   const getallcategory = async () => {
     const { data } = await Axios.get(
-      `http://35.154.86.59/api/admin/getproductCategory`
+      `http://35.154.134.118/api/admin/getproductCategory`
     );
     //const address = data.data;
     console.log(data.data);
@@ -110,7 +110,7 @@ const ShopGridTwoColumn = ({
   };
   const getalltags = async () => {
     const { data } = await Axios.get(
-      `http://35.154.86.59/api/admin/getuniquetag`
+      `http://35.154.134.118/api/admin/getuniquetag`
     );
     //const address = data.data;
     console.log(data.data);
@@ -120,7 +120,7 @@ const ShopGridTwoColumn = ({
   };
   const getproductbytagname = async (name) => {
     const { data } = await Axios.get(
-      `http://35.154.86.59/api/admin/getproductbytagname/${name}`
+      `http://35.154.134.118/api/admin/getproductbytagname/${name}`
     );
     console.log(data.data);
     setDress(data.data);
@@ -129,7 +129,7 @@ const ShopGridTwoColumn = ({
   const getproductbycolor = async (id) => {
     console.log(id);
     const { data } = await Axios.get(
-      `http://35.154.86.59/api/admin/productbycolor/${id}`
+      `http://35.154.134.118/api/admin/productbycolor/${id}`
     );
     console.log(data.data);
     setDress(data.data);
@@ -137,7 +137,7 @@ const ShopGridTwoColumn = ({
   const getproductbysize = async (id) => {
     console.log(id);
     const { data } = await Axios.get(
-      `http://35.154.86.59/api/admin/productbysize/${id}`
+      `http://335.154.134.118/api/admin/productbysize/${id}`
     );
     console.log(data.data);
     setDress(data.data);
@@ -145,16 +145,16 @@ const ShopGridTwoColumn = ({
   const getproductbybrand = async (id) => {
     console.log(id);
     const { data } = await Axios.get(
-      `http://35.154.86.59/api/admin/productbybrand/${id}`
+      `http://35.154.134.118/api/admin/productbybrand/${id}`
     );
     console.log(data.data);
     setDress(data.data);
   };
   const getproductbypricerange = async (min,max) => {
     console.log(min,max);
-    //http://35.154.86.59/api/admin/productbypricerange
+    //http://35.154.134.118/api/admin/productbypricerange
     const { data } = await Axios.post(
-      `http://35.154.86.59/api/admin/productbypricerange`,{
+      `http://35.154.134.118/api/admin/productbypricerange`,{
         minamt:min,
         maxamt:max
       }
@@ -182,7 +182,7 @@ const ShopGridTwoColumn = ({
 
   useEffect(() => {
     async function getData() {
-      const response = await fetch("http://35.154.86.59/api/admin/getproduct");
+      const response = await fetch("http://35.154.134.118/api/admin/getproduct");
 
       const data = await response.json();
 

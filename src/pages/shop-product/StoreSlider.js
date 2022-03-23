@@ -14,7 +14,7 @@ export class StoreSlider extends Component {
     StoreI: [],
   };
   componentDidMount() {
-    axios.get(`http://35.154.86.59/api/admin/getstore/`).then(res => {
+    axios.get(`http://35.154.134.118/api/admin/getstore/`).then(res => {
       let StoreI = res.data.data;
       console.log(res);
       this.setState({ StoreI });

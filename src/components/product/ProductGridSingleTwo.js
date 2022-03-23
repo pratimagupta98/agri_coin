@@ -25,7 +25,7 @@ const ProductGridSingleTwo = ({
   const { addToast } = useToasts();
   // const [users, setUsers] = useState([]);
   // const getUsers = async () => {
-  //   const res = await Axios.get("http://35.154.86.59/api/admin/getproduct")
+  //   const res = await Axios.get("http://35.154.134.118/api/admin/getproduct")
   //     .then(data => {
   //       console.log(data);
   //       console.log(data.data.data.data);
@@ -43,7 +43,7 @@ const ProductGridSingleTwo = ({
 
   useEffect(() => {
     async function getData() {
-      const response = await fetch("http://35.154.86.59/api/admin/getproduct");
+      const response = await fetch("http://35.154.134.118	/api/admin/getproduct");
 
       const data = await response.json();
 

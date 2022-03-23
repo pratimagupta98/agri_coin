@@ -83,7 +83,7 @@ import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
         //     status: this.state.status,
         //   };
                 
-                  axios.post("http://35.154.86.59/api/user/verifyotp",this.state)
+                  axios.post("http://35.154.134.118/api/user/verifyotp",this.state)
             
            .then(res => {
                 console.log(res);

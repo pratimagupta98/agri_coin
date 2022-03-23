@@ -32,7 +32,7 @@ const Wishlist = ({
   const fetchWish = async (token) => {
     console.log(token);
     const { data } = await Axios.get(
-      "http://35.154.86.59/api/admin/getallwishlist",
+      "http://35.154.134.118/api/admin/getallwishlist",
       {
         headers: {
           "auth-token": localStorage.getItem("auth-token"),
@@ -47,7 +47,7 @@ const Wishlist = ({
 
   const clearWishList = async () => {
     const { data } = await Axios.get(
-      "http://35.154.86.59/api/admin/clrwishlist",
+      "http://35.154.134.118/api/admin/clrwishlist",
       {
         headers: {
           "auth-token": localStorage.getItem("auth-token"),
@@ -62,7 +62,7 @@ const Wishlist = ({
   const removeitemfromwishlist = async (id) => {
     console.log(id);
     const { data } = await Axios.get(
-      `http://35.154.86.59/api/admin/delonewishlist/${id}`,
+      `http://35.154.134.118/api/admin/delonewishlist/${id}`,
       {
         headers: {
           "auth-token": localStorage.getItem("auth-token"),
@@ -162,7 +162,7 @@ const Wishlist = ({
                                       color="primary"
                                       onClick={() => {
                                         Axios.post(
-                                          "http://35.154.86.59/api/admin/add_ToCart",
+                                          "http://35.154.134.118/api/admin/add_ToCart",
                                           {
                                             product: wishes.product._id,
                                             product_qty: wishes.qty,
@@ -185,7 +185,7 @@ const Wishlist = ({
                                             console.log(wishes.product._id);
                                             //pahucha dena
                                             Axios.get(
-                                              `http://35.154.86.59/api/admin/delonewishlist/${wishes.product._id}`,
+                                              `http://35.154.134.118/api/admin/delonewishlist/${wishes.product._id}`,
                                               {
                                                 headers: {
                                                   "auth-token":

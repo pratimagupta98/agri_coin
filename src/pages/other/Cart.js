@@ -44,7 +44,7 @@ const Cart = ({
 
   const fetchcarts = async () => {
     const { data } = await Axios.get(
-      `http://35.154.86.59/api/admin/cartbycustomer`,
+      `http://35.154.134.118/api/admin/cartbycustomer`,
       {
         headers: {
           "auth-token": localStorage.getItem("auth-token"),
@@ -67,7 +67,7 @@ const Cart = ({
 
   const fetchaddress = async () => {
     const { data } = await Axios.get(
-      `http://35.154.86.59/api/user/viewoneuseraddress`,
+      `http://35.154.134.118/api/user/viewoneuseraddress`,
       {
         headers: {
           "auth-token": localStorage.getItem("auth-token"),
@@ -91,7 +91,7 @@ const Cart = ({
 
     try {
       const response = await Axios.get(
-        `http://35.154.86.59/api/admin/remove_cart/${id}`,
+        `http://35.154.134.118/api/admin/remove_cart/${id}`,
         {
           headers: {
             "auth-token": localStorage.getItem("auth-token"),
@@ -111,7 +111,7 @@ const Cart = ({
 
     try {
       const response = await Axios.get(
-        `http://35.154.86.59/api/admin/clearCart`,
+        `http://35.154.134.118/api/admin/clearCart`,
         {
           headers: {
             "auth-token": localStorage.getItem("auth-token"),
@@ -134,7 +134,7 @@ const Cart = ({
   const [user, setUser] = useState("");
   useEffect(() => {
     console.log("useEffect");
-    Axios.get("http://35.154.86.59/api/user/getonecustomer", {
+    Axios.get("http://35.154.134.118/api/user/getonecustomer", {
       headers: {
         "auth-token": localStorage.getItem("auth-token"),
       },
@@ -146,7 +146,7 @@ const Cart = ({
       .catch((error) => {
         console.log(error.response);
       });
-    Axios.get(`http://35.154.86.59/api/admin/rapay/${cartTotalPrice}`)
+    Axios.get(`http://35.154.134.118/api/admin/rapay/${cartTotalPrice}`)
       .then((response) => {
         console.log(response.data);
         setOrderId(response.data?.order.id);
@@ -186,7 +186,7 @@ const Cart = ({
             payment_id: res.payment_id,
           };
           console.log(res);
-          Axios.post("http://35.154.86.59/api/admin/addordersample", data, {
+          Axios.post("http://35.154.134.118/api/admin/addordersample", data, {
             headers: {
               "auth-token": localStorage.getItem("auth-token"),
             },

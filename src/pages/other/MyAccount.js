@@ -29,7 +29,7 @@ export default class MyAccount extends Component {
 
   componentDidMount() {
     axios
-      .get("http://35.154.86.59/api/user/getonecustomer", {
+      .get("http://35.154.134.118/api/user/getonecustomer", {
         headers: {
           "auth-token": localStorage.getItem("auth-token"),
         },
@@ -51,7 +51,7 @@ export default class MyAccount extends Component {
       });
 
     axios
-      .get("http://35.154.86.59/api/user/viewoneuseraddress", {
+      .get("http://35.154.134.118/api/user/viewoneuseraddress", {
         headers: {
           "auth-token": localStorage.getItem("auth-token"),
         },
@@ -77,7 +77,7 @@ export default class MyAccount extends Component {
     e.preventDefault();
     //let { id } = this.props.match.params;
     axios
-      .post(`http://35.154.86.59/api/user/editcustomer`, this.state, {
+      .post(`http://35.154.134.118/api/user/editcustomer`, this.state, {
         headers: {
           "auth-token": localStorage.getItem("auth-token"),
         },
@@ -94,7 +94,7 @@ export default class MyAccount extends Component {
     e.preventDefault();
     console.log(this.state);
     axios
-      .post("http://35.154.86.59/api/user/addcus_address", this.state, {
+      .post("http://35.154.134.118/api/user/addcus_address", this.state, {
         headers: {
           "auth-token": localStorage.getItem("auth-token"),
         },

@@ -34,7 +34,7 @@ export class ProductSlider extends Component {
   componentDidMount() {
     let { id } = this.props.match.params;
     axios
-      .get(`http://35.154.86.59/api/admin/getonestore/${id}`)
+      .get(`http://35.154.134.118/api/admin/getonestore/${id}`)
       .then((response) => {
         // console.log(response.data);
         console.log(response.data.data);
@@ -48,7 +48,7 @@ export class ProductSlider extends Component {
 
     //let { id } = this.props.match.params;
     axios
-      .get(`http://35.154.86.59/api/admin/productbystore/${id}`)
+      .get(`http://35.154.134.118/api/admin/productbystore/${id}`)
       .then((response) => {
         // console.log(response.data);
         console.log(response.data.data);

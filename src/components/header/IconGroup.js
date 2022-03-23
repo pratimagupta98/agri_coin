@@ -29,7 +29,7 @@ const IconGroup = ({
   //const { id } = useParams();
   const fetchcarts = async (token) => {
     const { data } = await Axios.get(
-      `http://35.154.86.59/api/admin/cartbycustomer`,
+      `http://35.154.134.118/api/admin/cartbycustomer`,
       {
         headers: {
           "auth-token": localStorage.getItem("auth-token"),
@@ -50,7 +50,7 @@ const IconGroup = ({
   const [wish, setWish] = useState([]);
   const fetchWish = async () => {
     const { data } = await Axios.get(
-      "http://35.154.86.59/api/admin/getallwishlist",
+      "http://35.154.134.118/api/admin/getallwishlist",
       {
         headers: {
           "auth-token": localStorage.getItem("auth-token"),

@@ -36,7 +36,7 @@ export default class Phone extends Component {
 // const Continue = (e) => {
     submitHandler = (e) => {
     e.preventDefault();
-    axios.post('http://35.154.86.59/api/user/sendotp',this.state)
+    axios.post('http://35.154.134.118/api/user/sendotp',this.state)
        
     .then((res)=>{
         console.log(res);

@@ -35,7 +35,7 @@ export default class LoginRegister extends Component {
     e.preventDefault();
     console.log(this.state);
     axios
-      .post("http://35.154.86.59/api/user/verifyotp", {
+      .post("http://35.154.134.118/api/user/verifyotp", {
         mobile: this.state.mobile,
         //customer_email: this.state.email,
         otp: this.state.otpnumber,
@@ -72,7 +72,7 @@ export default class LoginRegister extends Component {
     e.preventDefault();
 
     axios
-      .post("http://35.154.86.59/api/user/login", {
+      .post("http://35.154.134.118/api/user/login", {
         mobile:
           parseInt(this.state.email) != NaN
             ? parseInt(this.state.email)
@@ -100,7 +100,7 @@ export default class LoginRegister extends Component {
     e.preventDefault();
     this.setState({ otp: false });
     axios
-      .post("http://35.154.86.59/api/user/signup", this.state)
+      .post("http://35.154.134.118/api/user/signup", this.state)
       .then((response) => {
         console.log(response);
         // localStorage.setItem("token", response.data.token);
@@ -114,7 +114,7 @@ export default class LoginRegister extends Component {
       });
 
     axios
-      .post("http://35.154.86.59/api/user/sendotp", {
+      .post("http://35.154.134.118/api/user/sendotp", {
         mobile: this.state.mobile,
         //customer_email: this.state.email,
       })

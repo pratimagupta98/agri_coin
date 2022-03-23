@@ -24,7 +24,7 @@ const ProductDescriptionTab = ({
   const fetchReview = async (productid) => {
     console.log(productid);
     const { data } = await Axios.get(
-      `http://35.154.86.59/api/admin/getonereviewproduct/${productid}`
+      `http://35.154.134.118/api/admin/getonereviewproduct/${productid}`
     );
     console.log(data);
     const review = data.data;
@@ -49,7 +49,7 @@ const ProductDescriptionTab = ({
     e.preventDefault();
     console.log({ rating: value, comment: comment, productid: productid });
     Axios.post(
-      `http://35.154.86.59/api/admin/addreview`,
+      `http://35.154.134.118/api/admin/addreview`,
       {
         rating: value,
         comment: comment,

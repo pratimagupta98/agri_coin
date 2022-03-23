@@ -31,7 +31,7 @@ const MyOrder = ({
   const [order, setOrder] = useState([]);
   const fetchOrder = async (token) => {
     const { data } = await Axios.get(
-      "http://35.154.86.59/api/admin/getorderbycustomer",
+      "http://35.154.134.118/api/admin/getorderbycustomer",
       {
         headers: {
           "auth-token": localStorage.getItem("auth-token"),
@@ -148,7 +148,7 @@ const MyOrder = ({
                                       color="primary"
                                       onClick={() => {
                                         Axios.post(
-                                          "http://35.154.86.59/api/admin/add_ToCart",
+                                          "http://35.154.134.118/api/admin/add_ToCart",
                                           {
                                             product: orders.product._id,
                                             product_qty: orders.qty,
@@ -171,7 +171,7 @@ const MyOrder = ({
                                             console.log(orders.product._id);
                                             //pahucha dena
                                             Axios.get(
-                                              `http://35.154.86.59/api/admin/delonewishlist/${orders.product._id}`,
+                                              `http://35.154.134.118/api/admin/delonewishlist/${orders.product._id}`,
                                               {
                                                 headers: {
                                                   "auth-token":
